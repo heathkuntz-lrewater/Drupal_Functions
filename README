@@ -1,0 +1,5 @@
+This is my AJAX operations files.
+It includes four files that make the AJAX system work in addition to a connection to MySQL DB
+The "main.html" page loads the form for the funtions
+The "ajax_op.js" is an external js file that loads the functions for the project
+The "post.php" and "get.php" sends and retieves the information to the DB
