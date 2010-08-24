@@ -1,0 +1,32 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+      <script type="text/javascript" language="javascript" src="ajax_op.js"></script>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+     <div id="myDiv"><h2>Let AJAX change this text</h2></div>
+      <div id="txtlen"></div>
+      <p>This is your choice, choose one.</p>
+      <form  id="Hey">
+          <input type="radio" name="hw" value="1" />Use "Hello"<br />
+          <input type="radio" name="hw" value="2" />Use "Hi"<br />
+          <button type="button" onclick="loadXMLDoc(this.form.hw)">Change Content</button>
+      </form>
+      <br /> 
+    <form action="javascript:get(document.getElementById('change'));" name="change" id="change">
+           Modify the name:<input type="text" name="nc" id="nc" /><br />
+          <button type="submit" onclick="javascript: get(this.form.nc.value)">Change Name</button>
+    </form>
+<br><br>
+Server-Response:<br>
+<hr>
+<span name="myspan" id="myspan"></span>
+<hr>
+  </body>
+</html>
